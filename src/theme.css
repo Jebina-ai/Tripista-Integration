@@ -4936,7 +4936,7 @@ fieldset:disabled .btn {
     flex-basis: auto;
   }
   .navbar-expand-md .navbar-toggler {
-    display: none;
+    display: list-item;
   }
 }
 
@@ -6281,8 +6281,12 @@ fieldset:disabled .btn {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: transparent;
+  display: none;
+
 }
+
+
 
 .modal-backdrop.fade {
   opacity: 0;
@@ -6379,7 +6383,7 @@ fieldset:disabled .btn {
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
-    max-width: 800px;
+    max-width: 1000px;
   }
 }
 

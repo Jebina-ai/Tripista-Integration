@@ -1,5 +1,5 @@
 function formValues() {
-				
+
     var email =
         document.forms.RegForm.EMail.value;
     var password =
@@ -13,7 +13,7 @@ function formValues() {
         email.focus();
         return false;
     }
-    
+
     if (password == "") {
         alert("Please enter your Password");
         password.focus();
@@ -40,7 +40,7 @@ function formValues() {
     var password =
         document.forms.RegForm.Password.value;
     var confirmpassword =
-        document.forms.RegForm.confirmPassword.value;    
+        document.forms.RegForm.confirmPassword.value;
 
 
     var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
@@ -51,13 +51,13 @@ function formValues() {
         name.focus();
         return false;
     }
-    
+
     if (email == "" || !regEmail.test(email)) {
         window.alert("Please enter a valid Email address");
         email.focus();
         return false;
     }
-    
+
     if (password == "") {
         alert("Please enter your Password");
         password.focus();
@@ -79,6 +79,11 @@ if (password != confirmpassword) {
     return true;
 }
 
-// $('#image').click(function () {
-//     $('#myfile').click()
-// })
+
+
+$('#image').click(function () {
+    $('#myfile').click()
+})
+
+
+

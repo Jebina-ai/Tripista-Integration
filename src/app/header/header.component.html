@@ -13,21 +13,24 @@
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-600" aria-current="page" routerLink="">Home</a></li>
           <!-- <li class="nav-item"><a class="nav-link text-600" routerLink="admin">Admin </a></li> -->
           <li class="nav-item"><a class="nav-link text-600" routerLink="districts">Districts </a></li>
           <!-- <li class="nav-item"><a class="nav-link text-600" routerLink="login">Login</a></li> -->
           <li class="nav-item"><a class="nav-link text-600" routerLink="hotels">Hotels</a></li>
           <li class="nav-item"><a class="nav-link text-600" routerLink="guide">Guide</a></li>
-          <li class="nav-item"><a class="nav-link text-600" routerLink="feedback">Feedback</a></li>
+          <!-- <li class="nav-item"><a class="nav-link text-600" routerLink="feedback">Feedback</a></li> -->
           <li class="nav-item"><a class="nav-link text-600" routerLink="help">Help</a></li>
           <!-- <li class="nav-item"><a class="nav-link text-600" routerLink="userprofile">User Profile</a></li> -->
           <li class="nav-item"><a class="nav-link text-600" routerLink="addhotel" *ngIf="_auth.adminloggedIn()" (click)="loggedAdmin()">Add Hotel</a></li>
 
         </ul>
-        <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+        <ul class="navbar-nav pt-2 ml-auto" *ngIf="isLoggedIn">
           <li class="nav-item">
-            <a href="/profile" class="nav-link" routerLink="profile"><img src="/assets/img/icons/profile.png" style="height: 25px;"></a>
+            <a href="/feedback" class="nav-link text-600" routerLink="feedback">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a href="/profile" class="nav-link text-600" routerLink="profile"><img src="/assets/img/icons/profile.png" style="height: 25px;"></a>
           </li>
           <li class="nav-item">
             <a href class="btn btn-lg btn-primary hover-top" (click)="logout()" style="background-color: rgba(255, 0, 0, 0.793);">Log Out</a>

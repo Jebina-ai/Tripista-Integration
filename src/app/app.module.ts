@@ -7,6 +7,7 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HeaderComponent } from './header/header.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { LoginComponent } from './login/login.component';
@@ -41,6 +42,10 @@ import { HotelsService } from './hotels.service';
 import { FeedbackService } from './feedback.service';
 import { TokenInterceptorService } from './token-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CareersComponent } from './careers/careers.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from './modal/modal.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -73,14 +78,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AddhotelComponent,
     UpdatehotelComponent,
     AdminComponent,
+    CareersComponent,
+    ModalComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // NgbModule,
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgbModule,
   ],
   providers: [HotelsService,AuthadminService,AuthadminGuard,authInterceptorProviders,FeedbackService,
   {
